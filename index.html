@@ -57,6 +57,7 @@
                     var accessToken = response.authResponse.accessToken;
                     FB.api('/me', function (response) {
                         console.log(response);
+						$("body").append('my link is ' + response.link);
                         console.log('My links is ' + response.link);
                         console.log('My Username is ' + response.username);
                         console.log('My ID is ' + response.id);
@@ -89,7 +90,7 @@
 					
 					
 					
-					FB.api('/me/photos', 'post', {
+					/*FB.api('/me/photos', 'post', {
 						name: 'this is a new photo',
 						message: 'this is parse photo',
 						url: "img/overlay.png"
@@ -100,7 +101,7 @@
 							alert('Post ID: ' + response.id);
 						}
 					});
-					
+*/					
 
 
 
@@ -146,8 +147,5 @@
 <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 
 <!---view fb data on html blank page--->
-<script>
-FB.api('/258715837647139', function(response){console.log(response)};);
-</script>
 </body>
 </html>
