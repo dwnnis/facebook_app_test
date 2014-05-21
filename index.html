@@ -142,8 +142,11 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
 </script>
-
-
+<!---fb like box--->
 <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
+<!---view fb data on html blank page--->
+FB.api('/258715837647139', function(response){console.log(response)};);
+
 </body>
 </html>
